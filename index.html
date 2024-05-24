@@ -51,7 +51,7 @@
       //          In the real world, these are considered "edge cases".
   
     if (typeof a !== typeof b) return 'a and b must be of the same type';
-    if (typeof a !== 'number' && typeof a !== 'string') return 'a and b must be numbers or strings';
+    if (typeof a !== 'number' && typeof a !== 'string' && typeof b !== 'number' && typeof b !== 'string') return 'a and b must be numbers or strings';
     if ( typeof  a === 'string' && typeof b === 'string') {
       return a + b;
     } else if (typeof a === 'number' && typeof b === 'number') {
